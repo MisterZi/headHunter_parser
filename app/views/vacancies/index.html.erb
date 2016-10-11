@@ -1,1 +1,6 @@
-<p>Стартовая страница</p>
+<div class="vacancies">
+  <h2>Список вакансий Ruby программиста</h2>
+  <% @vacancies.each do |vacancy| %>
+      <p><%= link_to vacancy.name, vacancy_path(vacancy) %></p>
+  <% end %>
+</div>
