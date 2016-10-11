@@ -1,2 +1,4 @@
 class VacanciesController < ApplicationController
+
+
 end
