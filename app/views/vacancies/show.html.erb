@@ -3,7 +3,11 @@
   <h3>Описание</h3>
   <P><%= @vacancy.description.html_safe %></p>
   <h3>Зарплата</h3>
-  <p>от <%= @vacancy.salary_from %> до <%= @vacancy.salary_to %> <%= @vacancy.currency %></p>
+  <p>
+    <%= "от #{@vacancy.salary_from} " if @vacancy.salary_from.present? %>
+    <%= "до #{@vacancy.salary_to} " if @vacancy.salary_to.present? %>
+    <%= @vacancy.currency if @vacancy.currency.present? %>
+  </p>
   <h3>Ссылка на вакансию</h3>
   <%= link_to @vacancy.link, @vacancy.link %>
   <h3>Компания</h3>
