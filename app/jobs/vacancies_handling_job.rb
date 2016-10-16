@@ -1,7 +1,7 @@
 # Обработка списка вакансий Ruby разработчика в СПб
 
 class VacanciesHandlingJob
-  @queue = :simple
+  @queue = :vacancies_queue
 
   require 'open-uri'
 

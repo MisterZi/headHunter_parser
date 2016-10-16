@@ -1,7 +1,7 @@
 # Обработка всех вакансий
 
 class VacancyHandlingJob
-  @queue = :simple
+  @queue = :vacancy_queue
 
   require 'open-uri'
 
