@@ -4,8 +4,8 @@ vacancies_handling_job:
  args:
  description: “vacancies handling job”
 
-# vacancy_handling_job:
-#  cron: "*/1 * * * *"
-#  class: VacancyHandlingJob
-#  args:
-#  description: “vacancy handling job”
+vacancy_handling_job:
+  cron: "*/1 * * * *"
+  class: VacancyHandlingJob
+  args:
+  description: “vacancy handling job”
