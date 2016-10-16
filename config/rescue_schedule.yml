@@ -1,11 +1,11 @@
 vacancies_handling_job:
- cron: "*/1 * * * *"
- class: VacanciesHandlingJob
- args:
- description: “vacancies handling job”
+  cron: "*/1 * * * *"
+  class: VacanciesHandlingJob
+  args:
+  description: "vacancies handling job"
 
 vacancy_handling_job:
   cron: "*/1 * * * *"
   class: VacancyHandlingJob
   args:
-  description: “vacancy handling job”
+  description: "vacancy handling job"
