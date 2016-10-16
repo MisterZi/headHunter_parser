@@ -4,7 +4,7 @@ class VacanciesHandlingJob
   require 'open-uri'
 
   def self.perform
-    response = open("https://api.hh.ru/vacancies?text=ruby").read
+    response = open("https://api.hh.ru/vacancies?text=ruby&area=2").read
     vacancies_json = JSON.parse(response)
 
     vacancies_json['items'].each do |elements|
