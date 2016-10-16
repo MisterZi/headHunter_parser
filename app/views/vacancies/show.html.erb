@@ -7,6 +7,9 @@
     <%= "от #{@vacancy.salary_from} " if @vacancy.salary_from.present? %>
     <%= "до #{@vacancy.salary_to} " if @vacancy.salary_to.present? %>
     <%= @vacancy.currency if @vacancy.currency.present? %>
+    <% unless @vacancy.salary_from.present? || @vacancy.salary_to.present? || @vacancy.currency.present? %>
+      <%= 'з/п не указана' %>
+    <% end %>
   </p>
   <h3>Ссылка на вакансию</h3>
   <%= link_to @vacancy.link, @vacancy.link %>
